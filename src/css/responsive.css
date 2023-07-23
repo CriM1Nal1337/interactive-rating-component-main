@@ -1,0 +1,22 @@
+@media (max-width: 375px) {
+    .container,
+    .container-thank-you {
+      width: 350px;
+    }
+
+    .container .text{
+        font-size: 14px;
+      }
+
+    .container .rating-list{
+        gap: 14px;
+    }
+
+    .container .rating {
+        padding: 12px 18px;
+      }
+
+    .container-thank-you .text {
+        font-size: 14px;
+    }
+}
