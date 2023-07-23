@@ -25,7 +25,7 @@
   </head>
   <body>
     <main>
-      <div class="container  hide">
+      <div class="container">
         <img src="src/images/icon-star.svg" class="star" />
         <h1 class="title">How did we do?</h1>
         <p class="text">
@@ -33,20 +33,22 @@
           is appreciated to help us improve our offering!
         </p>
         <ul class="rating-list">
-          <li class="rating" id="1">1</li>
-          <li class="rating" id="2">2</li>
-          <li class="rating" id="3">3</li>
-          <li class="rating" id="4">4</li>
-          <li class="rating" id="5">5</li>
+          <li class="rating" data-value="1">1</li>
+          <li class="rating" data-value="2">2</li>
+          <li class="rating" data-value="3">3</li>
+          <li class="rating" data-value="4">4</li>
+          <li class="rating" data-value="5">5</li>
         </ul>
         <button class="btn" id="btn">Submit</button>
       </div>
-      <div class="container-thank-you">
+      <div class="container-thank-you hide">
         <img
           src="src/images/illustration-thank-you.svg"
           class="thank-you-img"
         />
-        <p id="selected">You selected 4 out of 5</p>
+        <p id="selected">
+          You selected <span id="selected-rating">0</span> of 5
+        </p>
         <h2 class="title">Thank you!</h2>
         <p class="text">
           We appreciate you taking the time to give a rating. If you ever need
@@ -62,6 +64,6 @@
       <a href="https://github.com/CriM1Nal1337">Elton Ferreira Borges</a>
     </footer>
 
-    <script src="src/js/index.js"></script>
+    <script src="src/js/index1.js"></script>
   </body>
 </html>
