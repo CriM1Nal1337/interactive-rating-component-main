@@ -1,3 +1,135 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--VeryDarkBlue);
+  font-family: "Overpass", sans-serif;
+}
+
+.container,
+.container-thank-you {
+  background: var(--DarkBlue);
+  height: 415px;
+  width: 410px;
+  border-radius: 25px;
+  padding: 34px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  align-items: flex-start;
+}
+
+.container .star {
+  padding: 16px;
+  margin-bottom: 30px;
+}
+
+.container .title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.container .text{
+  text-align: left;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.container .star,
+.rating {
+  background-color: var(--VeryDarkBlue);
+  border-radius: 30px;
+}
+
+.container .rating-list {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.container .rating {
+  padding: 17px 22px;
+  color: var(--MediumGrey);
+  font-weight: 700;
+}
+
+.container .rating:hover{
+  background-color: var(--Orange);
+  color: var(--White);
+  cursor: pointer;
+}
+
+.rating.selected{
+  background-color: var(--MediumGrey);
+  color: var(--White);
+}
+
+.container .btn{
+  width: 100%;
+  padding: 15px;
+  border-radius: 25px;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: var(--White);
+  background-color: var(--Orange);
+}
+
+.container .btn:hover{
+  cursor: pointer;
+  color: var(--Orange);
+  background-color: var(--White);
+}
+
+.container-thank-you{
+  align-items: center;
+}
+
+.container-thank-you .thank-you-img{
+  margin-bottom: 33px;
+}
+
+.container-thank-you #selected{
+  text-align: center;
+  background-color: hsla(25, 99%, 73%, 0.079);
+  color: var(--Orange);
+  padding: 6px 0;
+  width: 194px;
+  font-size: 15px;
+  border-radius: 15px;
+  margin-bottom: 35px;
+}
+
+.container-thank-you .title{
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.container-thank-you .text{
+  text-align: center;
+  font-size: 15px;
+}
+
+.title {
+  color: var(--White);
+  font-weight: 700;
+}
+
+.text {
+  color: var(--LightGrey);
+  line-height: 24px;
+}
+
+.hide {
+  display: none;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
